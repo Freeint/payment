@@ -1,0 +1,134 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+}
+
+body {
+    width: 100%;
+    background-color: black;
+}
+
+form {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    
+}
+
+h1 {
+  color: white;
+}
+
+
+h3 {
+    padding-top: 1rem;
+    color: rgb(224, 106, 28);
+    margin-left: 23%;
+    color: rgb(206, 105, 38);
+}
+
+h2 { 
+    color: white;
+    padding-right: rem;
+    padding-top: 0.2rem;
+    padding-bottom: rem;
+    
+}
+
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;  
+}
+
+h4 {
+    padding-left: 5.5rem;
+    padding-top: 1rem;
+    color: white;
+}
+
+
+button {
+    width: 8rem;
+    padding: 1.4rem;
+    cursor: pointer;
+    background: white;
+    color: blue;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    margin-top: 1.1rem;
+
+}
+
+a {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 0.1rem;
+}
+
+.blue-color {
+    color:blue;
+    font-size: 50px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 2rem;
+}
+
+.inp {
+    color: white;
+}
+ 
+.arrow {
+    position: relative;
+    transform: translate(-50%, -50); 
+}
+
+.arrow span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    margin: -1px;
+    animation: scroll 1s infinite;
+}
+
+
+.arrow span:nth-child(2) {
+    animation-delay: -.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -.4s;   
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px)
+    }
+}

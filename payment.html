@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- MATERIAL ICONS CDN-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+     rel="stylesheet">
+      <!-- GOOGLE FONTS (POPPINS)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+ <!-- STYLESHEET -->
+ <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+    <div class="pay">
+        <h1>Account Details</h1>
+    </div>
+    <div class="hon">
+        <h3>Name  Easy Grow</h3>
+        <h3>Bank Opay Digital</h3>
+    </div>
+
+    
+
+    <div class="hon">
+    </div>
+
+<div class="copy-link">
+    <input type="text" class="copy-link-input" value="9123134563" readonly>
+    <button type="button" class="copy-link-button">
+        <span class="material-icons-sharp">content_copy</span>
+    </button>
+</div>
+<div class="hon">
+    <h3>Name  Easy Grow</h3>
+    <h3>Bank Palmpay</h3>
+</div>
+<div class="copy-link">
+    <input type="text" class="copy-link-input" value="9123134563" readonly>
+    <button type="button" class="copy-link-button">
+        <span class="material-icons-sharp">content_copy</span>
+    </button>
+</div>
+
+<div class="ton">
+    <a href="tran.html">Pay With Card</a>
+</div>
+
+<script>
+    document.querySelectorAll(".copy-link").forEach(copyLinkCountainer => {
+        const inputFiled = copyLinkCountainer.querySelector(".copy-link-input");
+        const copyButton = copyLinkCountainer.querySelector(".copy-link-button");
+
+        inputFiled.addEventListener("focus", () => inputFiled.select());
+
+        copyButton.addEventListener("click", () => {
+            const text = inputFiled.value;
+
+            inputFiled.select();
+            navigator.clipboard.writeText(text);
+
+            inputFiled.value ="Copied",
+            setTimeout(() => inputFiled.value = text, 2000);
+        })
+    })
+</script>
+</body>
+</html>

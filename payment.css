@@ -1,0 +1,73 @@
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-items: center; 
+    background-color: black;  
+}
+
+.copy-link {
+    --height: 36px;
+
+    display: flex;
+    max-width: 550px;
+   
+}
+
+.copy-link-input {
+    padding: 0 8px;
+    font-size: 14px;
+    border: 1px solid #cccccccc;
+    border-right: none;
+    outline: none;
+    border-radius: 5px; 
+}
+
+.copy-link-input:hover {
+    background: #a3c7a3;
+    border-radius: 5px;
+}
+
+.copy-link-button {
+    flex-shrink: 0;
+    width: var(--height);
+    height: var(--height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dddddd;
+    color: white;
+    outline: none;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #1d0a0a;
+
+}
+
+.copy-link-button:hover {
+    background-color: yellow;
+    transition: 300ms;
+}
+
+.ton {
+ 
+    border-radius: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.pay {
+    font-size: 15px;
+    color: #fff;
+    box-shadow: inset;
+
+}
+
+.hon {
+    color: #fff;
+}
